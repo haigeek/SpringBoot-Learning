@@ -1,0 +1,6 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /webservice
+cxf:
+  path: /services  # 替换默认的/services路径

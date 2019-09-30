@@ -15,6 +15,7 @@
         <module>springboot-async</module>
         <module>springboot-shiro</module>
         <module>springboot-jpa</module>
+        <module>springboot-webservice</module>
     </modules>
 
     <name>springboot-learning</name>
