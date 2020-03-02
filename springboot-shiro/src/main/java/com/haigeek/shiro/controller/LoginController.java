@@ -85,7 +85,7 @@ public class LoginController {
     public String index(HttpSession session, Model model) {
         // _logger.info("访问首页start...");
         // 做一些其他事情，比如把项目的数量放到session中
-        if (ShiroKit.hasRole("admin") && session.getAttribute("projectNum") == null) {
+        if (ShiroKit.hasRole("sba") && session.getAttribute("projectNum") == null) {
             session.setAttribute("projectNum", 2);
         }
         if (session.getAttribute("picsUrlPrefix") == null) {

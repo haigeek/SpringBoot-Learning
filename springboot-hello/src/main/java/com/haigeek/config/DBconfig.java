@@ -42,7 +42,7 @@ public class DBconfig {
     public ServletRegistrationBean statViewServlet(){
         ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(new StatViewServlet(), "/druid/*");
         Map<String,String> initParams = Maps.newHashMap();
-        initParams.put("loginUsername","admin");//登录后台时的用户名
+        initParams.put("loginUsername","sba");//登录后台时的用户名
         initParams.put("loginPassword","123456");//登录后台时的密码
         initParams.put("allow","");//默认就是允许所有的访问
         initParams.put("deny","");//拒绝

@@ -4,7 +4,7 @@ spring:
   datasource:
     username: root
     password: 123456
-    url: jdbc:mysql://localhost:3306/shiro-demo
+    url: jdbc:mysql://localhost:3306/shiro-sba
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
     show-sql: true # 是否在控制台打印SQL语句
