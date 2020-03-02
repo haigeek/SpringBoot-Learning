@@ -1,6 +1,7 @@
 package com.haigeek.jpa.controller;
 
 import com.haigeek.jpa.model.entity.Role;
+import com.haigeek.jpa.model.entity.User;
 import com.haigeek.jpa.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,9 +26,4 @@ public class UserController {
         return roles;
     }
 
-    @RequestMapping(value = "/user/role/permission",method = {RequestMethod.GET})
-    public UserInfo getUserRolePermission(@RequestParam("userId") Integer userId){
-        UserInfo userInfo =userService.getUserInfo(userId);
-        return userInfo;
-    }
 }
