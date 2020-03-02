@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  # 配置SBA Client连接的安全账号密码
+  security:
+    user:
+      name: admin
+      password: admin
+  boot:
+    admin:
+      ui:
+        # 修改网页显示的tab标题
+        title: "应用监控管理"
