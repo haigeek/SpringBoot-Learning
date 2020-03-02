@@ -1,0 +1,23 @@
+server:
+  port: 8081
+spring:
+  boot:
+    admin:
+      client:
+        # 这个URL地址是SBA Server的服务地址，你需要将你的应用注册到该地址上
+        url: http://localhost:8080
+        # 配置连接到监测管理平台的Security安全密码
+        username: admin
+        password: admin
+        auto-registration: true
+        api-path: instances
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    shutdown:
+      enabled: true
+    health:
+      show-details: always
