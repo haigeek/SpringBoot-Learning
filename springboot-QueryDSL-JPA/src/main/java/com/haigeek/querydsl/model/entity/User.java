@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * @author zhaohj
@@ -25,6 +26,10 @@ public class User implements Serializable {
     private String userName;
     @Column(name = "name")
     private String name;
+    @Column(name="age",nullable = false)
+    private Integer age;
+    @Column(name="register_date",nullable = false)
+    private Date registerDate;
     @Column(name = "password",nullable = false)
     private String password;
     @Column(name = "state",nullable = false)

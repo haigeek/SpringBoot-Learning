@@ -19,8 +19,8 @@ public class RolePermission implements Serializable {
     @GeneratedValue
     @Column(name = "id")
     private Integer id;
-    @Column(name = "roleId")
+    @Column(name = "role_id")
     private Integer roleId;
-    @Column(name = "permissionId")
+    @Column(name = "permission_id")
     private Integer permissionId;
 }
